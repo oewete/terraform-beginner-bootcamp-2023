@@ -222,3 +222,28 @@ If you lose this file, you lose knowing the state of your infrastructure.
 
 `.terraform` directory contains binaries of terrform providers
 
+#### Issues with Terraform Cloud Login & Gitpod workspace
+
+After attempting to migrate the state file to terraform cloud , there was a prompt to login using `terraform login`
+
+This shows an editor but ran into some issues where i had to exit `/Q` & manually generated a token by launching [] (https://app.terraform.io/app/settings/tokens?source=terraform-login) to generate a token and pasted in command prompt for a succcesful  terraform login.
+
+OR
+
+Create & Open the file manually
+
+```sh
+touch /home/gitpod/.terraform.d/credentials.tfrc.json
+open /home/gitpod/.terraform.d/credentials.tfrc.json
+```
+
+Provide the following code & replace your token
+```json
+{
+  "credentials": {
+    "app.terraform.io": {
+      "token": "YOUR TERRAFORM CLOUD TOKEN"
+    }
+  }
+}
+```
