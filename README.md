@@ -249,3 +249,11 @@ Provide the following code & replace your token
 ```
 
 We have automated this workaround using the following bash script [bin/generate_tfrc_credentials](bin/generate_tfrc_credentials)
+
+#### Set Execution Mode in Terraform Cloud from remote to local
+
+On running `terraform apply` , an error **Error: No valid credential sources found for AWS Provider.**
+
+This was fixed by changing the Execution mode on Terraform Cloud Organization settings from Remote to Local
+
+[link](https://app.terraform.io/app/YOUR-ORGANIZATION/settings/profile)
