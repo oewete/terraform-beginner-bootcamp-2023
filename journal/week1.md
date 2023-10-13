@@ -4,7 +4,7 @@
 
 [How to Delete Local and Remote Tags on Git](https://devconnected.com/how-to-delete-local-and-remote-tags-on-git/)
 
-Locall delete a tag
+Locally delete a tag
 ```sh
 git tag -d <tag_name>
 ```
