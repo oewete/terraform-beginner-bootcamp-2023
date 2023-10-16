@@ -1,13 +1,13 @@
 terraform {
 
-/* cloud {
+cloud {
     organization = "AEGON-ONE"
 
     workspaces {
-      name = "terra-house-1"
+      name = "terraform-cloud"
     }
   }
-  */
+  
   required_providers {
    /*  random = {
       source = "hashicorp/random"
