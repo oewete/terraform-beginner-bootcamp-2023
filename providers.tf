@@ -1,24 +1,23 @@
 terraform {
 
-/* cloud {
+
+
+ cloud {
     organization = "AEGON-ONE"
 
     workspaces {
       name = "terra-house-1"
     }
   }
-  */
-  required_providers {
-   /*  random = {
-      source = "hashicorp/random"
-      version = "3.5.1"
-    } */
-
-    aws = {
+  
+  
+   /* required_providers {
+     aws = {
       source = "hashicorp/aws"
       version = "5.17.0"
     }
-  }
+  } */
+
 }
 
 
